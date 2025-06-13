@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <title>Laravel</title>
 
         <!-- Styles -->
@@ -40,7 +40,7 @@
             <a href="#" class="text-gray-700 hover:text-blue-600">Reseñas</a>
             <span class="text-gray-400">•</span>
             <a href="#" class="text-gray-700 hover:text-blue-600">Blog</a>
-            <a href="#" class="bg-gray-600 text-white px-5 py-2 rounded-md hover:bg-gray-700 transition duration-300 ml-4">Contacto</a>
+            <a href="#" class="bg-[#767676] text-white px-5 py-2 rounded-md hover:bg-gray-700 transition duration-300 ml-4">Contacto</a>
         </nav>
         <div class="ml-5 flex items-center text-base"> 
             @if (Route::has('login'))
@@ -50,11 +50,11 @@
                             Dashboard 
                         </a>
                     @else
-                        <a href="{{ route('login') }}" class="bg-gray-600 text-white px-5 py-2 rounded-md hover:bg-gray-700 transition duration-300 ml-4">
+                        <a href="{{ route('login') }}" class="bg-[#767676] text-white px-5 py-2 rounded-md hover:bg-gray-700 transition duration-300 ml-4">
                             Iniciar Sesión
                         </a>
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="bg-gray-600 text-white px-5 py-2 rounded-md hover:bg-gray-700 transition duration-300 ml-4">
+                            <a href="{{ route('register') }}" class="bg-[#767676] text-white px-5 py-2 rounded-md hover:bg-gray-700 transition duration-300 ml-4">
                                 Registrar
                             </a>
                         @endif
@@ -64,17 +64,42 @@
         </div>
             </div>
             </div>
-            <aside class="bg-[#D9D9D9] py-20 flex items-start px-4"> <!-- Cambiado a aside -->
-    <div class="max-w-4xl text-left"> <!-- Alineación a la izquierda -->
+            <div class="bg-[#D9D9D9] py-20 flex items-start px-4"> 
+    <div class="max-w-4xl text-left"> 
         <h1 class="text-5xl md:text-6xl font-bold text-black mb-8 leading-tight">
             Cruzá fronteras con<br>Nuevo Horizonte
         </h1>
-        <a href="#" class="bg-gray-700 text-white px-8 py-3 rounded-md hover:bg-gray-800 transition duration-300 text-lg font-medium">
+        <a href="#" class="bg-[#767676] text-white px-8 py-3 rounded-md hover:bg-gray-800 transition duration-300 text-lg font-medium">
             Contactanos
         </a>
     </div>
-</aside>
+</div>
         </header>
+        <section class="container mx-auto px-4 py-16 md:py-24 bg-white">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="relative w-full md:w-[420px] h-[340px] flex-shrink-0 mb-10 md:mb-0 ">
+            <img 
+                src="https://via.placeholder.com/350x320/666666/ffffff?text=Descripcion+de+la+imagen+1"
+                alt="imagen 1"
+                class="w-[350px] h-[320px] rounded-2xl shadow-lg object-cover">
+            <img 
+                src="https://via.placeholder.com/180x180/cccccc/ffffff?text=Descripcion+de+la+imagen+2"
+                alt="imagen 2"
+                class="absolute left-[-40px] bottom-[-30px] w-[180px] h-[180px] rounded-xl shadow-2xl object-cover border-4 border-white"
+                style="z-index:2;">
+        </div>
+        <div class="flex flex-col text-center md:pl-16 md:pr-0 ">
+            <h2 class="text-4xl md:text-5xl font-bold text-black mb-2">Nuevo Horizonte</h2>
+            <p class="text-xl md:text-2xl text-gray-700 italic mb-6">Agencia Mayorista</p>
+            <p class="text-gray-700 text-lg leading-relaxed max-w-2xl">
+                En Nuevo Horizonte nacimos con el compromiso de ofrecer atención personalizada al mercado peruano,
+                respaldada por un equipo con más de 30 años de experiencia en turismo. Nos enfocamos en brindar
+                servicios de calidad al cliente B2B, con valores como honestidad, compromiso e innovación,
+                buscando consolidarnos como líderes en el sector.
+            </p>
+        </div>
+    </div>
+</section>
         
 
         @if (Route::has('login'))
