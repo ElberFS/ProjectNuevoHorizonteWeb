@@ -76,42 +76,106 @@
 </div>
         </header>
         <section class="container mx-auto px-4 py-16 md:py-24 bg-white">
-    <div class="flex flex-col md:flex-row items-center justify-between">
-        <div class="relative w-full md:w-[420px] h-[340px] flex-shrink-0 mb-10 md:mb-0 ">
-            <img 
-                src="https://via.placeholder.com/350x320/666666/ffffff?text=Descripcion+de+la+imagen+1"
-                alt="imagen 1"
-                class="w-[350px] h-[320px] rounded-2xl shadow-lg object-cover">
-            <img 
-                src="https://via.placeholder.com/180x180/cccccc/ffffff?text=Descripcion+de+la+imagen+2"
-                alt="imagen 2"
-                class="absolute left-[-40px] bottom-[-30px] w-[180px] h-[180px] rounded-xl shadow-2xl object-cover border-4 border-white"
-                style="z-index:2;">
+    <div class="relative w-full md:w-[420px] h-[340px] flex-shrink-0 mb-10 md:mb-0 ">
+    <img 
+        src="Mapa_mundi_blanco-min.png"
+        alt="imagen 1"
+        class="w-[350px] h-[320px] rounded-2xl shadow-lg object-cover">
+    <img 
+        src="Mapa_mundi_blanco-min.png"
+        alt="imagen 2"
+        class="absolute left-[-40px] bottom-[-30px] w-[330px] h-[250px] rounded-xl shadow-2xl object-cover border-4 border-white"
+        style="z-index:2;">
+    
+    <div class="absolute top-0 right-0 p-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-black mb-2">Nuevo Horizonte</h2>
+        <p class="text-xl md:text-2xl text-gray-700 italic mb-6">Agencia Mayorista</p>
+        <p class="text-gray-700 text-lg leading-relaxed max-w-[700px] text-left">
+            En Nuevo Horizonte nacimos con el compromiso de ofrecer atención personalizada al mercado peruano, respaldada por un equipo con más de 30 años de experiencia en turismo. Nos enfocamos en brindar servicios de calidad al cliente B2B, con valores como honestidad, compromiso e innovación, buscando consolidarnos como líderes en el sector.
+        </p>
+    </div>
+
+</div>
+</section>
+<section class="bg-white py-16 px-4 relative overflow-hidden">
+    <div class="container mx-auto flex flex-row items-start gap-12">
+        <div class="md:w-1/2 flex justify-start">
+            <img
+                src="Mapa_mundi_blanco-min.png"
+                alt="Mapa mundi punteado"
+                class="w-full max-w-[900px] h-auto rounded-lg shadow-lg object-cover md:-ml-[180px]"
+            />
         </div>
-        <div class="flex flex-col text-center md:pl-16 md:pr-0 ">
-            <h2 class="text-4xl md:text-5xl font-bold text-black mb-2">Nuevo Horizonte</h2>
-            <p class="text-xl md:text-2xl text-gray-700 italic mb-6">Agencia Mayorista</p>
-            <p class="text-gray-700 text-lg leading-relaxed max-w-2xl">
-                En Nuevo Horizonte nacimos con el compromiso de ofrecer atención personalizada al mercado peruano,
-                respaldada por un equipo con más de 30 años de experiencia en turismo. Nos enfocamos en brindar
-                servicios de calidad al cliente B2B, con valores como honestidad, compromiso e innovación,
-                buscando consolidarnos como líderes en el sector.
-            </p>
+        <div class="md:w-1/2 flex flex-col">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">¡Suscríbete!</h2>
+            <p class="text-gray-600 mb-8">Únete a nuestra comunidad y recibe ofertas exclusivas</p>
+            <form class="max-w-md w-full">
+                <div class="mb-4">
+                    <label for="nombre" class="block text-gray-700 text-lg font-semibold mb-2">Nombre</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Ingresa tu nombre"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+                    />
+                </div>
+                <div class="mb-8">
+                    <label for="email" class="block text-gray-700 text-lg font-semibold mb-2">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Ingresa tu correo electrónico"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+                    />
+                </div>
+                <div class="flex items-center gap-4">
+                    <button
+                        type="submit"
+                        class="bg-gray-600 text-white font-semibold py-3 px-8 rounded-md hover:bg-gray-700 transition duration-300"
+                    >
+                        REGISTRARSE
+                    </button>
+                    <img
+                        src="Mapa_mundi_blanco-min.png"
+                        alt="Logo Empresa"
+                        class="h-12 w-auto opacity-80"
+                    />
+                </div>
+            </form>
         </div>
     </div>
 </section>
-        
+
+        <footer class="bg-[#535353] text-white py-16 px-4">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        <div class="text-center md:text-left">
+            <div class="text-white text-5xl font-bold mb-4">LOGO</div>
+            <p class="text-gray-300 text-2xl leading-snug">
+                Transforma tus sueños de viajes con experiencias inolvidables
+            </p>
+        </div>
+
+        <div class="text-center md:text-left">
+            <h3 class="text-white text-xl font-bold mb-4 uppercase">Politicas</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="text-gray-300 hover:text-white">Terminos y Condiciones</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Preguntas Frecuentes</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Política de privacidad</a></li>
+            </ul>
+        </div>
+
+        <div class="text-center md:text-left">
+            <h3 class="text-white text-xl font-bold mb-4 uppercase">Atencion al Cliente</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="text-gray-300 hover:text-white">Atencion al cliente</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Libro de reclamaciones</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Como reservar</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
         @if (Route::has('login'))
         @endif
-    </body>
-</html>
-    </body>
-</html>
-    </body>
-</html>
-    </body>
-</html>
-</html>
     </body>
 </html>
