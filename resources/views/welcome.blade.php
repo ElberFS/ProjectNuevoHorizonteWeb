@@ -126,68 +126,61 @@
                     </div>
                 </div>
             </section>
-<section class="py-16 md:py-24 bg-[#f1ffff]">
-    <div class="container mx-auto px-4">
-        <div class="flex items-center justify-center md:justify-start mb-12">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mr-4">Tu Experiencia</h2>
-            <img
-                src="apple-touch-icon.png" 
-                alt="Logo de la empresa"
-                class="h-12 w-auto" 
-            >
-        </div>
-
-        <div class="flex justify-center"> 
-            <div class="flex space-x-8 overflow-x-auto pb-6 md:pb-0 scrollbar-hide {{-- md:-mr-0 ya no es necesario aquí --}}">
-                <div class="flex-none w-[300px] bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
-                    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
-                        ¡Absolutamente genial! Desde el primer contacto hasta el último día, todo fue impecable.
-                        Nos sentimos totalmente cuidados y pudimos disfrutar cada momento sin preocupaciones.
-                        ¡Gracias por una experiencia inolvidable!
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 rounded-full bg-gray-300 flex-shrink-0 mr-3"></div> {{-- Pequeño círculo (avatar) --}}
-                        <div>
-                            <p class="font-semibold text-gray-800">Ana y Luis M.</p>
-                            <p class="text-sm text-gray-500">Lima, Peru</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex-none w-[300px] bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
-                    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
-                        ¡Absolutamente genial! Desde el primer contacto hasta el último día, todo fue impecable.
-                        Nos sentimos totalmente cuidados y pudimos disfrutar cada momento sin preocupaciones.
-                        ¡Gracias por una experiencia inolvidable!
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 rounded-full bg-gray-300 flex-shrink-0 mr-3"></div> {{-- Pequeño círculo (avatar) --}}
-                        <div>
-                            <p class="font-semibold text-gray-800">Ana y Luis M.</p>
-                            <p class="text-sm text-gray-500">Lima, Peru</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex-none w-[300px] bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
-                    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
-                        ¡Absolutamente genial! Desde el primer contacto hasta el último día, todo fue impecable.
-                        Nos sentimos totalmente cuidados y pudimos disfrutar cada momento sin preocupaciones.
-                        ¡Gracias por una experiencia inolvidable!
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 rounded-full bg-gray-300 flex-shrink-0 mr-3"></div> 
-                        <div>
-                            <p class="font-semibold text-gray-800">Ana y Luis M.</p>
-                            <p class="text-sm text-gray-500">Lima, Peru</p>
-                        </div>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
+<section class="py-16 bg-[#f5ffff]">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-center md:justify-start mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mr-4">Tu Experiencia</h2>
+      <img
+        src="{{ asset('img/logo.png') }}"
+        alt="Logo de la empresa"
+        class="h-12 w-auto"
+      >
     </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg shadow-xl overflow-hidden p-6 flex flex-col justify-between">
+        <div>
+          <p class="text-gray-700 leading-relaxed mb-6">
+            ¡Desde el primer momento en que planificamos nuestro viaje hasta el último día de la aventura, la experiencia con esta agencia fue simplemente impecable! Nos sentimos completamente respaldados y cuidados en cada detalle, lo que nos permitió disfrutar al máximo sin ninguna preocupación. Gracias por hacer de nuestro viaje algo verdaderamente inolvidable. ¡Súper recomendados!
+          </p>
+        </div>
+      <div class="flex items-center">
+      <img src="/img/logo.png" alt="Foto de Ana y Luis" class="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0">
+      <div>
+      <p class="font-semibold text-gray-800 text-lg">María Patricia, M</p>
+      <p class="text-sm text-gray-500">Lima, Perú</p>
+      </div>
+      </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-xl overflow-hidden p-6 flex flex-col justify-between">
+        <div>
+          <p class="text-gray-700 leading-relaxed mb-6">
+            Realmente quedamos impresionados con la organización de todo el tour. Cada detalle estaba perfectamente orquestado, y el equipo demostró un profesionalismo y una calidez humana excepcionales. Nos transmitieron una confianza total, y saber que estábamos en buenas manos hizo que el viaje fuera aún más placentero. ¡Definitivamente, volveremos a viajar con ellos!
+          </p>
+        </div>
+        <div class="flex items-center">
+      <img src="/img/logo.png" alt="Foto de Ana y Luis" class="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0">
+      <div>
+      <p class="font-semibold text-gray-800 text-lg">Sofía Bravo, G</p>
+      <p class="text-sm text-gray-500">Lima, Perú</p>
+      </div>
+      </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-xl overflow-hidden p-6 flex flex-col justify-between">
+        <div>
+          <p class="text-gray-700 leading-relaxed mb-6">
+            La atención al cliente fue sobresaliente de principio a fin. Siempre estuvieron disponibles para resolver nuestras dudas y adaptarse a nuestras necesidades. Y ni hablar de los destinos, simplemente hermosos, con itinerarios que nos permitieron vivir experiencias auténticas. Después de esta vivencia, no dudaríamos ni un segundo en contratar sus servicios para futuras escapadas. ¡Son excelentes!
+          </p>
+        </div>
+        <div class="flex items-center">
+      <img src="/img/logo.png" alt="Foto de Ana y Luis" class="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0">
+      <div>
+      <p class="font-semibold text-gray-800 text-lg">Carlos Cervantes, R</p>
+      <p class="text-sm text-gray-500">Lima, Perú</p>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
             <section id="noticias" class="py-16 bg-[#f5ffff]">
                 <div class="container mx-auto px-4">
