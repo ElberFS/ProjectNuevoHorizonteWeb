@@ -63,47 +63,118 @@
 
         <main>
 
-            <section id="Hero" style="position: relative; height: 700px; ">
-                    <img
-                        src="/img/BGHero.png"
-                        alt="Hero Image"
-                        style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 1;"
-                    />
-                    <div class="bg-black  py-20 flex  px-4 animate-fade-in" style="position: relative; z-index: 2; background: transparent;">
-                        <div class="mt-80 ml-30 max-w-2xl  animate-slide-in-left">
-                            <a
-                                href="#"
-                                class="bg-[#163E73]  text-white px-8 py-3 rounded-md hover:bg-[#29B9D9] transition duration-300 text-lg font-medium shadow-lg"
-                            >
-                                Contactanos
-                            </a>
+            <section id="Hero" style="position: relative; height: 600px;">
+                <img
+                    src="/img/BGHero.png"
+                    alt="Hero Image"
+                    style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 1;"
+                />
+                <div class="absolute inset-0 flex flex-col justify-center items-start text-white py-20 px-4 z-20">
+                    <div class="mt-20 ml-32 animate-slide-in-left">
+                        <p class="text-7xl font-bold leading-tight mb-2">
+                            Cruzá fronteras con 
+                        </p>
+                        
+                        <img src="/svg/textHero.svg" alt="Nuevo Horizonte" class="mb-8" style="width: 400px; max-width: 100%; height: auto;" />
+                        
+                        <a
+                            href="#"
+                            class="bg-[#163E73] text-white px-8 py-3 rounded-md hover:bg-[#1b72bf]   transition duration-300 text-lg font-medium shadow-lg inline-block"
+                        >
+                            Contactanos
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="py-16 bg-[#f5ffff]">
+                <div class="mx-auto max-w-7xl px-4 flex flex-row flex-wrap items-center justify-center gap-10 md:gap-50">
+                    <div class="relative w-[350px] animate-slide-in-left">
+                        <img
+                            src="/img/About.png"
+                            alt="Imagen de mapa mundial 1"
+                            class="w-[350px] h-[320px] rounded-2xl shadow-lg object-cover hover-scale-rotate"
+                        >
+                    </div>
+
+                    <div class="max-w-[550px] text-center md:text-left animate-slide-in-right">
+                        <h2 class="text-4xl md:text-5xl font-bold text-black mb-2">Nuevo Horizonte</h2>
+                        <p class="text-xl md:text-2xl text-gray-700 italic mb-6">Agencia Mayorista</p>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            En Nuevo Horizonte nacimos con el compromiso de ofrecer atención personalizada al mercado peruano, respaldada por un equipo con más de 30 años de experiencia en turismo. Nos enfocamos en brindar servicios de calidad al cliente B2B, con valores como honestidad, compromiso e innovación, buscando consolidarnos como líderes en el sector.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="alianzas" class="bg-white py-12">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl md:text-5xl font-bold text-center text-black mb-2">Nuestras Alianzas</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                        <img src="/img/aliados/logo01.png " alt="Logo 1" class="max-h-24">
+                    </div>
+                    <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                        <img src="/img/aliados/logo02.png" alt="Logo 2" class="max-h-24">
+                    </div>
+                    <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                        <img src="/img/aliados/logo03.png" alt="Logo 3" class="max-h-24">
+                    </div>
+                    <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                        <img src="/img/aliados/logo04.png" alt="Logo 4" class="max-h-24">
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="noticias" class="py-16 bg-[#f5ffff]">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl md:text-6xl font-bold text-gray-900 text-center mb-12 animate-fade-in-up">
+                        Nuevo Horizonte Noticias
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom delay-100">
+                            <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
+                                <img src="/img/noticias/not01.jpg" alt="Imagen de Noticia 1" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Descubre los Secretos Incas</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Perú es un país lleno de maravillas naturales y culturales, pero hay rincones que parecen sacados de una película de ciencia ficción. Explora la mística ciudadela de Machu Picchu y los enigmáticos caminos del Camino Inca.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom delay-200">
+                            <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
+                                <img src="/img/noticias/not02.png" alt="Imagen de Noticia 2" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Aventura Amazónica: Selva Peruana</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Adéntrate en el corazón del Amazonas peruano. Conoce la increíble biodiversidad, sus comunidades nativas y la exuberante flora y fauna que te dejarán sin aliento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom delay-300">
+                            <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
+                                <img src="/img/noticias/not03.png" alt="Imagen de Noticia 3" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Gastronomía Peruana: Un Viaje de Sabores</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    La gastronomía peruana es reconocida mundialmente por su diversidad y exquisito sabor. Desde la costa hasta la sierra y selva, cada región ofrece una experiencia culinaria única e inolvidable.
+                                </p>
+                            </div>
                         </div>
                     </div>
-            </section>
-
-
-            <section id="about" class="mx-auto max-w-7xl px-4 py-16 bg-white flex flex-row flex-wrap items-center justify-center gap-50">
-                <!-- Imagen a la izquierda -->
-                <div class="relative w-[350px] animate-slide-in-left">
-                    <img
-                    src="/img/About.png"
-                    alt="Imagen de mapa mundial 1"
-                    class="w-[350px] h-[320px] rounded-2xl shadow-lg object-cover hover-scale-rotate"
-                    >
-                </div>
-
-                <!-- Texto a la derecha -->
-                <div class="max-w-[550px] text-center md:text-left animate-slide-in-right">
-                    <h2 class="text-4xl md:text-5xl font-bold text-black mb-2">Nuevo Horizonte</h2>
-                    <p class="text-xl md:text-2xl text-gray-700 italic mb-6">Agencia Mayorista</p>
-                    <p class="text-gray-700 text-lg leading-relaxed">
-                    En Nuevo Horizonte nacimos con el compromiso de ofrecer atención personalizada al mercado peruano, respaldada por un equipo con más de 30 años de experiencia en turismo. Nos enfocamos en brindar servicios de calidad al cliente B2B, con valores como honestidad, compromiso e innovación, buscando consolidarnos como líderes en el sector.
-                    </p>
                 </div>
             </section>
 
-            <section class="bg-[#F8F8F8] py-16 px-4 relative overflow-hidden">
-                <div class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
+            <section class="bg-white py-16 px-4 relative overflow-hidden">
+                <div class="container mx-auto flex  md:flex-row items-center justify-center gap-12">
                     <div class="md:w-1/2 flex justify-center md:justify-start animate-slide-in-left">
                         <img
                             src="Mapa_mundi_blanco-min.png"
@@ -111,7 +182,7 @@
                             class="w-full max-w-[900px] h-auto rounded-lg shadow-lg object-cover md:-ml-[180px] hover-scale-rotate"
                         />
                     </div>
-                    <div class="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left animate-slide-in-right">
+                    <div class="md:w-1/2 flex flex-col  md:items-start text-center md:text-left animate-slide-in-right">
                         <h2 class="text-4xl font-bold text-gray-800 mb-4">¡Suscríbete!</h2>
                         <p class="text-gray-600 mb-8">Únete a nuestra comunidad y recibe ofertas exclusivas</p>
                         <form class="max-w-md w-full">
@@ -140,11 +211,6 @@
                                 >
                                     REGISTRARSE
                                 </button>
-                                <img
-                                    src="Mapa_mundi_blanco-min.png"
-                                    alt="Logo Empresa"
-                                    class="h-12 w-auto opacity-80"
-                                />
                             </div>
                         </form>
                     </div>
