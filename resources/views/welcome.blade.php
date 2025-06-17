@@ -126,7 +126,69 @@
                     </div>
                 </div>
             </section>
+<section class="py-16 md:py-24 bg-[#f1ffff]">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-center md:justify-start mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mr-4">Tu Experiencia</h2>
+            <img
+                src="apple-touch-icon.png" 
+                alt="Logo de la empresa"
+                class="h-12 w-auto" 
+            >
+        </div>
 
+        <div class="flex justify-center"> 
+            <div class="flex space-x-8 overflow-x-auto pb-6 md:pb-0 scrollbar-hide {{-- md:-mr-0 ya no es necesario aquí --}}">
+                <div class="flex-none w-[300px] bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
+                    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
+                        ¡Absolutamente genial! Desde el primer contacto hasta el último día, todo fue impecable.
+                        Nos sentimos totalmente cuidados y pudimos disfrutar cada momento sin preocupaciones.
+                        ¡Gracias por una experiencia inolvidable!
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex-shrink-0 mr-3"></div> {{-- Pequeño círculo (avatar) --}}
+                        <div>
+                            <p class="font-semibold text-gray-800">Ana y Luis M.</p>
+                            <p class="text-sm text-gray-500">Lima, Peru</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-none w-[300px] bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
+                    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
+                        ¡Absolutamente genial! Desde el primer contacto hasta el último día, todo fue impecable.
+                        Nos sentimos totalmente cuidados y pudimos disfrutar cada momento sin preocupaciones.
+                        ¡Gracias por una experiencia inolvidable!
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex-shrink-0 mr-3"></div> {{-- Pequeño círculo (avatar) --}}
+                        <div>
+                            <p class="font-semibold text-gray-800">Ana y Luis M.</p>
+                            <p class="text-sm text-gray-500">Lima, Peru</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-none w-[300px] bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
+                    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
+                        ¡Absolutamente genial! Desde el primer contacto hasta el último día, todo fue impecable.
+                        Nos sentimos totalmente cuidados y pudimos disfrutar cada momento sin preocupaciones.
+                        ¡Gracias por una experiencia inolvidable!
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex-shrink-0 mr-3"></div> 
+                        <div>
+                            <p class="font-semibold text-gray-800">Ana y Luis M.</p>
+                            <p class="text-sm text-gray-500">Lima, Peru</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</section>
             <section id="noticias" class="py-16 bg-[#f5ffff]">
                 <div class="container mx-auto px-4">
                     <h2 class="text-4xl md:text-6xl font-bold text-gray-900 text-center mb-12 animate-fade-in-up">
@@ -172,127 +234,6 @@
                     </div>
                 </div>
             </section>
-            <section class="py-16 md:py-24 bg-gray-100"> {{-- Fondo gris claro --}}
-    <div class="container mx-auto px-4">
-        <div class="flex items-center justify-center md:justify-start mb-12">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mr-4">Tu Experiencia</h2>
-            {{-- Usaremos el logo de Laravel como placeholder para "Logo" --}}
-            <img
-                src="apple-touch-icon.png" {{-- Reemplaza con la ruta a tu imagen del logo --}}
-                alt="Logo de la empresa"
-                class="h-12 w-auto" {{-- Ajusta el tamaño del logo --}}
-            >
-        </div>
-
-        {{-- Aquí está el cambio clave: un div flex centrado para el carrusel --}}
-        <div class="flex justify-center"> {{-- Este div centra el carrusel --}}
-            <div class="flex space-x-8 overflow-x-auto pb-6 md:pb-0 scrollbar-hide {{-- md:-mr-0 ya no es necesario aquí --}}">
-                <div class="flex-none w-[300px] bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
-                    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
-                        ¡Absolutamente genial! Desde el primer contacto hasta el último día, todo fue impecable.
-                        Nos sentimos totalmente cuidados y pudimos disfrutar cada momento sin preocupaciones.
-                        ¡Gracias por una experiencia inolvidable!
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 rounded-full bg-gray-300 flex-shrink-0 mr-3"></div> {{-- Pequeño círculo (avatar) --}}
-                        <div>
-                            <p class="font-semibold text-gray-800">Ana y Luis M.</p>
-                            <p class="text-sm text-gray-500">Lima, Peru</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex-none w-[300px] bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
-                    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
-                        ¡Absolutamente genial! Desde el primer contacto hasta el último día, todo fue impecable.
-                        Nos sentimos totalmente cuidados y pudimos disfrutar cada momento sin preocupaciones.
-                        ¡Gracias por una experiencia inolvidable!
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 rounded-full bg-gray-300 flex-shrink-0 mr-3"></div> {{-- Pequeño círculo (avatar) --}}
-                        <div>
-                            <p class="font-semibold text-gray-800">Ana y Luis M.</p>
-                            <p class="text-sm text-gray-500">Lima, Peru</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex-none w-[300px] bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
-                    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
-                        ¡Absolutamente genial! Desde el primer contacto hasta el último día, todo fue impecable.
-                        Nos sentimos totalmente cuidados y pudimos disfrutar cada momento sin preocupaciones.
-                        ¡Gracias por una experiencia inolvidable!
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 rounded-full bg-gray-300 flex-shrink-0 mr-3"></div> {{-- Pequeño círculo (avatar) --}}
-                        <div>
-                            <p class="font-semibold text-gray-800">Ana y Luis M.</p>
-                            <p class="text-sm text-gray-500">Lima, Peru</p>
-                        </div>
-                    </div>
-                </div>
-
-                {{-- Puedes duplicar las tarjetas `div.flex-none` para tener más --}}
-            </div>
-        </div>
-    </div>
-</section>
-            <section class="py-16 md:py-24 bg-gray-300"> {{-- Fondo gris oscuro para esta sección --}}
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-12">Nuevo Horizonte Noticias</h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12"> {{-- Usamos Grid para 3 columnas --}}
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-500 text-xl">
-                            {{-- Placeholder para la imagen de la noticia --}}
-                            {{-- Si tienes una imagen real, reemplaza este div con <img src="ruta/a/tu/imagen.jpg" alt="Título de la Noticia" class="w-full h-full object-cover"> --}}
-                            IMAGEN
-                        </div>
-                        <div class="p-6 text-left">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Title</h3>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                Perú es un país lleno de maravillas naturales y culturales, pero hay rincones que parecen
-                                sacados de una película de ciencia ficción.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-500 text-xl">
-                            IMAGEN
-                        </div>
-                        <div class="p-6 text-left">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Title</h3>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                Perú es un país lleno de maravillas naturales y culturales, pero hay rincones que parecen
-                                sacados de una película de ciencia ficción.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-500 text-xl">
-                            IMAGEN
-                        </div>
-                        <div class="p-6 text-left">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Title</h3>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                Perú es un país lleno de maravillas naturales y culturales, pero hay rincones que parecen
-                                sacados de una película de ciencia ficción.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <button
-                    type="button"
-                    class="bg-gray-600 text-white font-semibold py-3 px-8 rounded-md hover:bg-gray-700 transition duration-300"
-                >
-                    Ver Mas
-                </button>
-            </div>
-        </section>
-
             <section class="bg-white py-16 px-4 relative overflow-hidden">
                 <div class="container mx-auto flex  md:flex-row items-center justify-center gap-12">
                     <div class="md:w-1/2 flex justify-center md:justify-start animate-slide-in-left">
