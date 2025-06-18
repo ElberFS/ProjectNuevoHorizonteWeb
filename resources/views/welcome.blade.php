@@ -88,16 +88,16 @@
             </section>
 
             <section id="about" class="py-16 bg-[#f5ffff]">
-                <div class="mx-auto max-w-7xl px-4 flex flex-row flex-wrap items-center justify-center gap-10 md:gap-50">
-                    <div class="relative w-[350px] animate-slide-in-left">
+                <div class="mx-auto max-w-7xl px-4 flex  md:flex-row flex-wrap items-center justify-center gap-10 md:gap-20 lg:gap-50">
+                    <div class="relative w-[300px] sm:w-[350px] animate-slide-in-left">
                         <img
                             src="/img/About.png"
                             alt="Imagen de mapa mundial 1"
-                            class="w-[350px] h-[320px] rounded-2xl shadow-lg object-cover hover-scale-rotate"
+                            class="w-full h-[280px] sm:h-[320px] rounded-2xl shadow-lg object-cover hover-scale-rotate"
                         >
                     </div>
 
-                    <div class="max-w-[550px] text-center md:text-left animate-slide-in-right">
+                    <div class="max-w-[550px] text-center md:text-left animate-slide-in-right px-4">
                         <h2 class="text-4xl md:text-5xl font-bold text-black mb-2">Nuevo Horizonte</h2>
                         <p class="text-xl md:text-2xl text-gray-700 italic mb-6">Agencia Mayorista</p>
                         <p class="text-gray-700 text-lg leading-relaxed">
@@ -130,63 +130,77 @@
             <section class="py-16 bg-[#f5ffff]">
                 <div class="container mx-auto px-4">
                     <div class="flex items-center justify-center md:justify-start mb-12">
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mr-4">Tu Experiencia</h2>
-                    <img
-                        src="{{ asset('img/logo.png') }}"
-                        alt="Logo de la empresa"
-                        class="h-12 w-auto"
-                    >
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mr-4">Tu Experiencia</h2>
+                        <img
+                            src="/svg/textHero.svg"
+                            alt="Logo de la empresa"
+                            class="h-15 w-auto"
+                        >
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-lg shadow-xl overflow-hidden p-6 flex flex-col justify-between">
-                        <div>
-                        <p class="text-gray-700 leading-relaxed mb-6">
-                            ¡Desde el primer momento en que planificamos nuestro viaje hasta el último día de la aventura, la experiencia con esta agencia fue simplemente impecable! Nos sentimos completamente respaldados y cuidados en cada detalle, lo que nos permitió disfrutar al máximo sin ninguna preocupación. Gracias por hacer de nuestro viaje algo verdaderamente inolvidable. ¡Súper recomendados!
-                        </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-white rounded-lg shadow-xl overflow-hidden p-6 flex flex-col justify-between">
+                            <div>
+                                <p class="text-gray-700 leading-relaxed mb-6">
+                                    ¡Desde el primer momento en que planificamos nuestro viaje hasta el último día de la aventura, la experiencia con esta agencia fue simplemente impecable! Nos sentimos completamente respaldados y cuidados en cada detalle, lo que nos permitió disfrutar al máximo sin ninguna preocupación. Gracias por hacer de nuestro viaje algo verdaderamente inolvidable. ¡Súper recomendados!
+                                </p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="/img/logo.png" alt="Foto de Ana y Luis" class="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0">
+                                <div>
+                                    <p class="font-semibold text-gray-800 text-lg">María Patricia, M</p>
+                                    <p class="text-sm text-gray-500">Lima, Perú</p>
+                                </div>
+                            </div>
                         </div>
-                    <div class="flex items-center">
-                    <img src="/img/logo.png" alt="Foto de Ana y Luis" class="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0">
-                    <div>
-                    <p class="font-semibold text-gray-800 text-lg">María Patricia, M</p>
-                    <p class="text-sm text-gray-500">Lima, Perú</p>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-xl overflow-hidden p-6 flex flex-col justify-between">
-                        <div>
-                        <p class="text-gray-700 leading-relaxed mb-6">
-                            Realmente quedamos impresionados con la organización de todo el tour. Cada detalle estaba perfectamente orquestado, y el equipo demostró un profesionalismo y una calidez humana excepcionales. Nos transmitieron una confianza total, y saber que estábamos en buenas manos hizo que el viaje fuera aún más placentero. ¡Definitivamente, volveremos a viajar con ellos!
-                        </p>
+                        <div class="bg-white rounded-lg shadow-xl overflow-hidden p-6 flex flex-col justify-between">
+                            <div>
+                                <p class="text-gray-700 leading-relaxed mb-6">
+                                    Realmente quedamos impresionados con la organización de todo el tour. Cada detalle estaba perfectamente orquestado, y el equipo demostró un profesionalismo y una calidez humana excepcionales. Nos transmitieron una confianza total, y saber que estábamos en buenas manos hizo que el viaje fuera aún más placentero. ¡Definitivamente, volveremos a viajar con ellos!
+                                </p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="/img/logo.png" alt="Foto de Ana y Luis" class="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0">
+                                <div>
+                                    <p class="font-semibold text-gray-800 text-lg">Sofía Bravo, G</p>
+                                    <p class="text-sm text-gray-500">Lima, Perú</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex items-center">
-                    <img src="/img/logo.png" alt="Foto de Ana y Luis" class="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0">
-                    <div>
-                    <p class="font-semibold text-gray-800 text-lg">Sofía Bravo, G</p>
-                    <p class="text-sm text-gray-500">Lima, Perú</p>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-xl overflow-hidden p-6 flex flex-col justify-between">
-                        <div>
-                        <p class="text-gray-700 leading-relaxed mb-6">
-                            La atención al cliente fue sobresaliente de principio a fin. Siempre estuvieron disponibles para resolver nuestras dudas y adaptarse a nuestras necesidades. Y ni hablar de los destinos, simplemente hermosos, con itinerarios que nos permitieron vivir experiencias auténticas. Después de esta vivencia, no dudaríamos ni un segundo en contratar sus servicios para futuras escapadas. ¡Son excelentes!
-                        </p>
+                        <div class="bg-white rounded-lg shadow-xl overflow-hidden p-6 flex flex-col justify-between">
+                            <div>
+                                <p class="text-gray-700 leading-relaxed mb-6">
+                                    La atención al cliente fue sobresaliente de principio a fin. Siempre estuvieron disponibles para resolver nuestras dudas y adaptarse a nuestras necesidades. Y ni hablar de los destinos, simplemente hermosos, con itinerarios que nos permitieron vivir experiencias auténticas. Después de esta vivencia, no dudaríamos ni un segundo en contratar sus servicios para futuras escapadas. ¡Son excelentes!
+                                </p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="/img/logo.png" alt="Foto de Ana y Luis" class="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0">
+                                <div>
+                                    <p class="font-semibold text-gray-800 text-lg">Carlos Cervantes, R</p>
+                                    <p class="text-sm text-gray-500">Lima, Perú</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex items-center">
-                    <img src="/img/logo.png" alt="Foto de Ana y Luis" class="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0">
-                    <div>
-                    <p class="font-semibold text-gray-800 text-lg">Carlos Cervantes, R</p>
-                    <p class="text-sm text-gray-500">Lima, Perú</p>
-                    </div>
+                        <div class="bg-white rounded-lg shadow-xl overflow-hidden p-6 flex flex-col justify-between">
+                            <div>
+                                <p class="text-gray-700 leading-relaxed mb-6">
+                                    Mi familia y yo estamos encantados con la aventura que vivimos. Desde la primera consulta, el equipo fue súper atento y nos ayudó a diseñar el viaje perfecto. La logística fue impecable, permitiéndonos disfrutar de cada momento sin preocupaciones. ¡Gracias por hacer de nuestro viaje una experiencia mágica e inolvidable! ¡Totalmente recomendados!
+                                </p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="/img/logo.png" alt="Foto de Elber Jesús" class="w-12 h-12 rounded-full object-cover mr-4 flex-shrink-0">
+                                <div>
+                                    <p class="font-semibold text-gray-800 text-lg">Elber Jesús, F</p>
+                                    <p class="text-sm text-gray-500">Arequipa, Perú</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </section>
 
-            <section id="noticias" class="py-16 bg-[#f5ffff]">
+            <section id="noticias" class="py-16 bg-white">
                 <div class="container mx-auto px-4">
-                    <h2 class="text-4xl md:text-6xl font-bold text-gray-900 text-center mb-12 animate-fade-in-up">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12 animate-fade-in-up">
                         Nuevo Horizonte Noticias
                     </h2>
 
@@ -230,21 +244,21 @@
                 </div>
             </section>
 
-            <section class="bg-white py-16 px-4 relative overflow-hidden">
+            <section class="bg-[#f5ffff] py-16 px-4 relative overflow-hidden">
                 <div class="container mx-auto flex  md:flex-row items-center justify-center gap-12">
-                    <div class="md:w-1/2 flex justify-center md:justify-start animate-slide-in-left">
+                    <div class="w-full md:w-1/2 flex justify-center md:justify-start animate-slide-in-left  md:block">
                         <img
                             src="/img/Suscribirse.png"
                             alt="Mapa mundi punteado"
-                            class="w-full max-w-[900px] h-auto rounded-lg object-cover md:-ml-[180px] hover-scale-rotate"
+                            class="w-full max-w-[300px] md:max-w-[900px] h-auto rounded-lg object-cover md:-ml-[180px] hover-scale-rotate"
                         />
                     </div>
-                    <div class="md:w-1/2 flex flex-col  md:items-start  md:text-left animate-slide-in-right">
+                    <div class="w-full md:w-1/2 flex flex-col items-center text-center md:items-start md:text-left animate-slide-in-right">
                         <h2 class="text-4xl font-bold text-gray-800 mb-4">¡Suscríbete!</h2>
                         <p class="text-gray-600 mb-8">Únete a nuestra comunidad y recibe ofertas exclusivas</p>
                         <form class="max-w-md w-full">
                             <div class="mb-4">
-                                <label for="nombre" class="block text-gray-700 text-lg font-semibold mb-2">Nombre</label>
+                                <label for="nombre" class="block text-gray-700 text-lg font-semibold mb-2 text-left">Nombre</label>
                                 <input
                                     type="text"
                                     id="nombre"
@@ -253,7 +267,7 @@
                                 />
                             </div>
                             <div class="mb-8">
-                                <label for="email" class="block text-gray-700 text-lg font-semibold mb-2">Email</label>
+                                <label for="email" class="block text-gray-700 text-lg font-semibold mb-2 text-left">Email</label>
                                 <input
                                     type="email"
                                     id="email"
@@ -261,10 +275,10 @@
                                     class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#29B9D9]"
                                 />
                             </div>
-                            <div class="flex flex-col sm:flex-row  justify-center sm:justify-start gap-4">
+                            <div class="flex flex-col sm:flex-row justify-center sm:justify-start gap-4">
                                 <button
                                     type="submit"
-                                    class="bg-[#163E73] text-white font-semibold py-3 px-8 rounded-md hover:bg-[#29B9D9] transition duration-300"
+                                    class="bg-[#163E73] text-white font-semibold py-3 px-8 rounded-md hover:bg-[#29B9D9] transition duration-300 w-full sm:w-auto"
                                 >
                                     REGISTRARSE
                                 </button>
@@ -273,6 +287,8 @@
                     </div>
                 </div>
             </section>
+
+
         </main> 
 
         <footer class="bg-[#163E73] text-white py-16 px-4 animate-fade-in">
