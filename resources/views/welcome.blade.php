@@ -139,10 +139,10 @@
                         />
                         <div class="absolute inset-0 flex flex-col justify-center items-center text-white px-4 py-10">
                             <p class="text-4xl font-bold text-center leading-snug mb-4">Cruzá fronteras con</p>
-                            <img src="/svg/textHero.svg" alt="Nuevo Horizonte" class="mb-6 w-[250px]" />
+                            <img src="/svg/textHeroWhite.svg" alt="Nuevo Horizonte" class="mb-6 w-[250px]" />
                             <a
                                 href="#"
-                                class="bg-[#163E73] text-white px-6 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-base font-medium shadow-lg"
+                                class="bg-[#1b72bf] text-white px-6 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-base font-medium shadow-lg"
                             >
                                 Contáctanos
                             </a>
@@ -157,10 +157,10 @@
                         />
                         <div class="absolute inset-0 flex flex-col justify-center items-start text-white px-4 md:pl-32 py-20">
                             <p class="text-7xl font-bold leading-tight mb-4">Cruzá fronteras con</p>
-                            <img src="/svg/textHero.svg" alt="Nuevo Horizonte" class="mb-8 w-[400px]" />
+                            <img src="/svg/textHeroWhite.svg" alt="Nuevo Horizonte" class="mb-8 w-[400px]" />
                             <a
                                 href="#"
-                                class="bg-[#163E73] text-white px-8 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-lg font-medium shadow-lg"
+                                class="bg-[#1b72bf] text-white px-8 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-lg font-medium shadow-lg"
                             >
                                 Contáctanos
                             </a>
@@ -190,7 +190,7 @@
 
             <section  class="bg-white py-12">
                 <div class="container mx-auto px-4">
-                    <h2 class="text-4xl md:text-5xl font-bold text-center text-black mb-2">Nuestras Alianzas</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold text-center text-black mb-2">Aliados Estrategicos</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
                         <img src="/img/aliados/logo01.png " alt="Logo 1" class="max-h-24">
