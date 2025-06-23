@@ -49,7 +49,10 @@
 
 
             
-            <a href="#Hero" class="text-2xl font-bold text-black ">LOGO</a>
+            <a href="#Hero" class="text-2xl font-bold text-black ">
+            <img src="Logo_NH_02.png" alt="Company Logo" style="width: 200px; height: auto;">
+            </a>
+
 
             <button x-show="isMobile"
                 @click="mobileMenuIsOpen = !mobileMenuIsOpen"
@@ -97,7 +100,7 @@
                 <li><a href="#Reseñas" class="block text-neutral-600 dark:text-neutral-300">Reseñas</a></li>
                 <li><a href="#Noticias" class="block text-neutral-600 dark:text-neutral-300">Noticias</a></li>
                 <li><a href="#Ofertas" class="block text-neutral-600 dark:text-neutral-300">Ofertas</a></li>
-                <li><a href="#Contacto" class="block text-neutral-600 dark:text-neutral-300">Conctacto</a></li>
+                <li><a href="#Contacto" class="block text-neutral-600 dark:text-neutral-300">Contacto</a></li>
 
                 @if (Route::has('login'))
                     @auth
@@ -399,7 +402,9 @@
         <footer  id="Contacto" class="bg-[#163E73] text-white py-16 px-4 animate-fade-in">
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
                 <div class="text-center md:text-left">
-                    <div class="text-white text-5xl font-bold mb-4">LOGO</div>
+                        <div class="logo-wrapper">
+    <img src="Logo1.svg" alt="Company Logo" class="main-logo">
+</div>
                     <p class="text-gray-300 text-2xl leading-snug">
                         Transforma tus sueños de viajes con experiencias inolvidables
                     </p>
