@@ -405,41 +405,108 @@
                         Nuevo Horizonte Noticias
                     </h2>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom delay-100">
-                            <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
-                                <img src="/img/noticias/not01.jpg" alt="Imagen de Noticia 1" class="w-full h-full object-cover">
+                    <div x-data="{ showAllNews: false }">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom delay-100">
+                                <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
+                                    <img src="/img/noticias/not01.jpg" alt="Imagen de Noticia 1" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Descubre los Secretos Incas</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        Perú es un país lleno de maravillas naturales y culturales, pero hay rincones que parecen sacados de una película de ciencia ficción. Explora la mística ciudadela de Machu Picchu y los enigmáticos caminos del Camino Inca.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="p-6">
-                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Descubre los Secretos Incas</h3>
-                                <p class="text-gray-700 leading-relaxed">
-                                    Perú es un país lleno de maravillas naturales y culturales, pero hay rincones que parecen sacados de una película de ciencia ficción. Explora la mística ciudadela de Machu Picchu y los enigmáticos caminos del Camino Inca.
-                                </p>
+
+                            <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom delay-200">
+                                <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
+                                    <img src="/img/noticias/not02.png" alt="Imagen de Noticia 2" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Aventura Amazónica: Selva Peruana</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        Adéntrate en el corazón del Amazonas peruano. Conoce la increíble biodiversidad, sus comunidades nativas y la exuberante flora y fauna que te dejarán sin aliento.
+                                    </p>
+                                </div>
                             </div>
+
+                            <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom delay-300">
+                                <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
+                                    <img src="/img/noticias/not03.png" alt="Imagen de Noticia 3" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Gastronomía Peruana: Un Viaje de Sabores</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        La gastronomía peruana es reconocida mundialmente por su diversidad y exquisito sabor. Desde la costa hasta la sierra y selva, cada región ofrece una experiencia culinaria única e inolvidable.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <template x-if="showAllNews">
+                                <div class="contents"> <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom"
+                                        x-transition:enter="transition ease-out duration-500"
+                                        x-transition:enter-start="opacity-0 transform translate-y-4"
+                                        x-transition:enter-end="opacity-100 transform translate-y-0"
+                                        x-transition:leave="transition ease-in duration-300"
+                                        x-transition:leave-start="opacity-100 transform translate-y-0"
+                                        x-transition:leave-end="opacity-0 transform translate-y-4">
+                                        <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
+                                            <img src="/img/noticias/not04.jpg" alt="Imagen de Noticia 4" class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="p-6">
+                                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Cultura Viva: Festividades Peruanas</h3>
+                                            <p class="text-gray-700 leading-relaxed">
+                                                Sumérgete en las vibrantes festividades de Perú, donde las tradiciones ancestrales cobran vida con danzas, música y coloridos trajes. Descubre la riqueza cultural de nuestro país.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom"
+                                        x-transition:enter="transition ease-out duration-500 delay-100"
+                                        x-transition:enter-start="opacity-0 transform translate-y-4"
+                                        x-transition:enter-end="opacity-100 transform translate-y-0"
+                                        x-transition:leave="transition ease-in duration-300"
+                                        x-transition:leave-start="opacity-100 transform translate-y-0"
+                                        x-transition:leave-end="opacity-0 transform translate-y-4">
+                                        <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
+                                            <img src="/img/noticias/not05.jpg" alt="Imagen de Noticia 5" class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="p-6">
+                                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Tesoros Escondidos: Lagos Andinos</h3>
+                                            <p class="text-gray-700 leading-relaxed">
+                                                Explora la majestuosidad de los lagos andinos de Perú, paisajes impresionantes que albergan una rica biodiversidad y comunidades con tradiciones milenarias. Un destino para la aventura y la serenidad.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom"
+                                        x-transition:enter="transition ease-out duration-500 delay-200"
+                                        x-transition:enter-start="opacity-0 transform translate-y-4"
+                                        x-transition:enter-end="opacity-100 transform translate-y-0"
+                                        x-transition:leave="transition ease-in duration-300"
+                                        x-transition:leave-start="opacity-100 transform translate-y-0"
+                                        x-transition:leave-end="opacity-0 transform translate-y-4">
+                                        <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
+                                            <img src="/img/noticias/not06.jpg" alt="Imagen de Noticia 6" class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="p-6">
+                                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Innovación y Sostenibilidad en Perú</h3>
+                                            <p class="text-gray-700 leading-relaxed">
+                                                Conoce los avances de Perú en innovación y sostenibilidad, proyectos que buscan preservar nuestro patrimonio natural y cultural mientras impulsan el desarrollo de las comunidades locales.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
                         </div>
 
-                        <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom delay-200">
-                            <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
-                                <img src="/img/noticias/not02.png" alt="Imagen de Noticia 2" class="w-full h-full object-cover">
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Aventura Amazónica: Selva Peruana</h3>
-                                <p class="text-gray-700 leading-relaxed">
-                                    Adéntrate en el corazón del Amazonas peruano. Conoce la increíble biodiversidad, sus comunidades nativas y la exuberante flora y fauna que te dejarán sin aliento.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="bg-white rounded-lg shadow-xl overflow-hidden animate-slide-in-bottom delay-300">
-                            <div class="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
-                                <img src="/img/noticias/not03.png" alt="Imagen de Noticia 3" class="w-full h-full object-cover">
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Gastronomía Peruana: Un Viaje de Sabores</h3>
-                                <p class="text-gray-700 leading-relaxed">
-                                    La gastronomía peruana es reconocida mundialmente por su diversidad y exquisito sabor. Desde la costa hasta la sierra y selva, cada región ofrece una experiencia culinaria única e inolvidable.
-                                </p>
-                            </div>
+                        <div class="text-center mt-12">
+                            <button @click="showAllNews = !showAllNews"
+                                    x-text="showAllNews ? 'Ver Menos' : 'Ver Más'"
+                                    class="bg-[#163E73] text-white px-4 py-2 rounded-sm font-medium">
+                                Ver Más
+                            </button>
                         </div>
                     </div>
                 </div>
