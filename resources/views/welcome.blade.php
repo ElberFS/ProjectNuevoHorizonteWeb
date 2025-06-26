@@ -199,79 +199,79 @@
                 class="relative w-full h-[600px] overflow-hidden" 
             >
 
-                <div class="flex transition-transform duration-700 ease-in-out h-full"
-                    :style="`transform: translateX(-${currentSlide * 100}%)`">
+                    <div class="flex transition-transform duration-700 ease-in-out h-full"
+                        :style="`transform: translateX(-${currentSlide * 100}%)`">
 
-                   
-                    <template x-for="(slide, index) in slides" :key="index">
-                        {{-- Cada slide individual --}}
-                        <div class="w-full flex-shrink-0 relative h-full">
-
-                           
-                            <div x-show="isMobile" class="relative w-full h-full"
-                                x-transition:enter="transition ease-out duration-300"
-                                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
-                                <img
-                                    :src="slide.mobile.image"
-                                    :alt="'Fondo móvil ' + slide.id"
-                                    class="w-full h-full object-cover absolute top-0 left-0"
-                                />
-                               
-                                <template x-if="slide.mobile.title">
-                                    <div class="absolute inset-0 flex flex-col justify-center items-center text-white px-4 py-10 ">
-                                        <p class="text-4xl font-bold text-center leading-snug mb-4 animate__animated animate__fadeInDown" x-text="slide.mobile.title"></p>
-                                        <img :src="slide.mobile.text_img" :alt="'Texto Hero Móvil ' + slide.id" class="mb-6 w-[250px] animate__animated animate__zoomIn" />
-                                        <a
-                                            :href="slide.mobile.button_link"
-                                            class="bg-[#1b72bf] text-white px-6 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-base font-medium shadow-lg animate__animated animate__bounceIn"
-                                            x-text="slide.mobile.button_text"
-                                        ></a>
-                                    </div>
-                                </template>
-                            </div>
+                    
+                        <template x-for="(slide, index) in slides" :key="index">
+                            {{-- Cada slide individual --}}
+                            <div class="w-full flex-shrink-0 relative h-full">
 
                             
-                            <div x-show="!isMobile" class="relative w-full h-full"
-                                x-transition:enter="transition ease-out duration-300"
-                                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
-                                <img
-                                    :src="slide.desktop.image"
-                                    :alt="'Fondo escritorio ' + slide.id"
-                                    class="w-full h-full object-cover absolute top-0 left-0"
-                                />
+                                <div x-show="isMobile" class="relative w-full h-full"
+                                    x-transition:enter="transition ease-out duration-300"
+                                    x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+                                    <img
+                                        :src="slide.mobile.image"
+                                        :alt="'Fondo móvil ' + slide.id"
+                                        class="w-full h-full object-cover absolute top-0 left-0"
+                                    />
                                 
-                                <template x-if="slide.desktop.title">
-                                    <div class="absolute inset-0 flex flex-col justify-center items-start text-white px-4 md:pl-32 py-20  bg-opacity-40">
-                                        <p class="text-7xl font-bold leading-tight mb-4 animate__animated animate__fadeInDown" x-text="slide.desktop.title"></p>
-                                        <img :src="slide.desktop.text_img" :alt="'Texto Hero Escritorio ' + slide.id" class="mb-8 w-[400px] animate__animated animate__zoomIn" />
-                                        <a
-                                            :href="slide.desktop.button_link"
-                                            class="bg-[#1b72bf] text-white px-8 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-lg font-medium shadow-lg animate__animated animate__bounceIn"
-                                            x-text="slide.desktop.button_text"
-                                        ></a>
-                                    </div>
-                                </template>
+                                    <template x-if="slide.mobile.title">
+                                        <div class="absolute inset-0 flex flex-col justify-center items-center text-white px-4 py-10 ">
+                                            <p class="text-4xl font-bold text-center leading-snug mb-4 animate__animated animate__fadeInDown" x-text="slide.mobile.title"></p>
+                                            <img :src="slide.mobile.text_img" :alt="'Texto Hero Móvil ' + slide.id" class="mb-6 w-[250px] animate__animated animate__zoomIn" />
+                                            <a
+                                                :href="slide.mobile.button_link"
+                                                class="bg-[#1b72bf] text-white px-6 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-base font-medium shadow-lg animate__animated animate__bounceIn"
+                                                x-text="slide.mobile.button_text"
+                                            ></a>
+                                        </div>
+                                    </template>
+                                </div>
+
+                                
+                                <div x-show="!isMobile" class="relative w-full h-full"
+                                    x-transition:enter="transition ease-out duration-300"
+                                    x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+                                    <img
+                                        :src="slide.desktop.image"
+                                        :alt="'Fondo escritorio ' + slide.id"
+                                        class="w-full h-full object-cover absolute top-0 left-0"
+                                    />
+                                    
+                                    <template x-if="slide.desktop.title">
+                                        <div class="absolute inset-0 flex flex-col justify-center items-start text-white px-4 md:pl-32 py-20  bg-opacity-40">
+                                            <p class="text-7xl font-bold leading-tight mb-4 animate__animated animate__fadeInDown" x-text="slide.desktop.title"></p>
+                                            <img :src="slide.desktop.text_img" :alt="'Texto Hero Escritorio ' + slide.id" class="mb-8 w-[400px] animate__animated animate__zoomIn" />
+                                            <a
+                                                :href="slide.desktop.button_link"
+                                                class="bg-[#1b72bf] text-white px-8 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-lg font-medium shadow-lg animate__animated animate__bounceIn"
+                                                x-text="slide.desktop.button_text"
+                                            ></a>
+                                        </div>
+                                    </template>
+                                </div>
                             </div>
-                        </div>
-                    </template>
-                </div>
+                        </template>
+                    </div>
 
-                <button @click="prevSlide()"
-                    class="absolute top-1/2 left-6 transform -translate-y-1/2 bg-gray-900 bg-opacity-40 text-white p-4 rounded-full hover:bg-opacity-60 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-75 transition duration-300 z-20">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                </button>
-                <button @click="nextSlide()"
-                    class="absolute top-1/2 right-6 transform -translate-y-1/2 bg-black bg-opacity-90 text-white p-4 rounded-full hover:bg-opacity-60 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-75 transition duration-300 z-20">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                </button>
+                    <button @click="prevSlide()"
+                        class="absolute top-1/2 left-6 transform -translate-y-1/2 bg-gray-900 bg-opacity-40 text-white p-4 rounded-full hover:bg-opacity-60 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-75 transition duration-300 z-20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button @click="nextSlide()"
+                        class="absolute top-1/2 right-6 transform -translate-y-1/2 bg-black bg-opacity-90 text-white p-4 rounded-full hover:bg-opacity-60 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-75 transition duration-300 z-20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
 
-                <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
-                    <template x-for="(slide, index) in slides" :key="index">
-                        <button @click="currentSlide = index; stopAutoplay(); startAutoplay();"
-                            :class="{ 'bg-[#1b72bf] ring-2 ring-white ring-opacity-75': currentSlide === index, 'bg-gray-400 hover:bg-gray-300': currentSlide !== index }"
-                            class="w-4 h-4 rounded-full transition duration-300 focus:outline-none"></button>
-                    </template>
-                </div>
+                    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+                        <template x-for="(slide, index) in slides" :key="index">
+                            <button @click="currentSlide = index; stopAutoplay(); startAutoplay();"
+                                :class="{ 'bg-[#1b72bf] ring-2 ring-white ring-opacity-75': currentSlide === index, 'bg-gray-400 hover:bg-gray-300': currentSlide !== index }"
+                                class="w-4 h-4 rounded-full transition duration-300 focus:outline-none"></button>
+                        </template>
+                    </div>
             </section>
 
             <section id="Nosotros" class="py-16 bg-[#f5ffff]">
@@ -294,22 +294,25 @@
                 </div>
             </section>
 
-            <section  class="bg-white py-12">
+            <section class="bg-white py-12">
                 <div class="container mx-auto px-4">
-                    <h2 class="text-4xl md:text-5xl font-bold text-center text-black mb-2">Aliados Estrategicos</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                        <img src="/img/aliados/logo01.png " alt="Logo 1" class="max-h-24">
-                    </div>
-                    <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                        <img src="/img/aliados/logo02.png" alt="Logo 2" class="max-h-24">
-                    </div>
-                    <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                        <img src="/img/aliados/logo03.png" alt="Logo 3" class="max-h-24">
-                    </div>
-                    <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                        <img src="/img/aliados/logo04.png" alt="Logo 4" class="max-h-24">
-                    </div>
+                    <h2 class="text-5xl font-bold text-center text-black mb-8">Aliados Estrategicos</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                            <img src="/img/aliados/logo01.png " alt="Logo 1" class="max-h-16">
+                        </div>
+                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                            <img src="/img/aliados/logo02.png" alt="Logo 2" class="max-h-16">
+                        </div>
+                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                            <img src="/img/aliados/logo03.png" alt="Logo 3" class="max-h-16">
+                        </div>
+                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                            <img src="/img/aliados/logo04.png" alt="Logo 4" class="max-h-16">
+                        </div>
+                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                            <img src="/img/aliados/logo05.png" alt="Logo 5" class="max-h-16">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -509,8 +512,8 @@
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
                 <div class="text-center md:text-left">
                         <div class="logo-wrapper">
-    <img src="Logo1.svg" alt="Company Logo" class="main-logo">
-</div>
+                        <img src="Logo1.svg" alt="Company Logo" class="main-logo">
+                </div>
                     <p class="text-gray-300 text-2xl leading-snug">
                         Transforma tus sueños de viajes con experiencias inolvidables
                     </p>
