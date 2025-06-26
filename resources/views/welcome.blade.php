@@ -119,53 +119,159 @@
 
         <main>
 
-            <section  
-                
+            <section  
                 x-data="{
+                    // Lógica de detección de móvil/escritorio
                     isMobile: window.innerWidth < 700,
                     updateView() {
                         this.isMobile = window.innerWidth < 700;
+                    },
+
+                    // Datos de los slides (directamente aquí)
+                    slides: [
+                        { // Primera diapositiva: Con texto y botones
+                            id: 1,
+                            mobile: {
+                                image: '/img/BGHero.png', // Tu imagen original
+                                title: 'Cruzá fronteras con',
+                                text_img: '/svg/textHeroWhite.svg',
+                                button_text: 'Contáctanos',
+                                button_link: '#'
+                            },
+                            desktop: {
+                                image: '/img/BGHero.png', // Tu imagen original
+                                title: 'Cruzá fronteras con',
+                                text_img: '/svg/textHeroWhite.svg',
+                                button_text: 'Contáctanos',
+                                button_link: '#'
+                            }
+                        },
+                        { // Segunda diapositiva: Solo imagen /img/BGHero01.png, sin texto
+                            id: 2,
+                            mobile: {
+                                image: '/img/BGHero.png',
+                                title: '', text_img: '', button_text: '', button_link: '' // Vacío para que no se muestre el contenido
+                            },
+                            desktop: {
+                                image: '/img/BGHero.png',
+                                title: '', text_img: '', button_text: '', button_link: '' // Vacío para que no se muestre el contenido
+                            }
+                        },
+                        { // Tercera diapositiva: Solo imagen /img/BGHero02.png, sin texto
+                            id: 3,
+                            mobile: {
+                                image: '/img/BGHero.png',
+                                title: '', text_img: '', button_text: '', button_link: '' // Vacío para que no se muestre el contenido
+                            },
+                            desktop: {
+                                image: '/img/BGHero.png',
+                                title: '', text_img: '', button_text: '', button_link: '' // Vacío para que no se muestre el contenido
+                            }
+                        }
+                    ],
+
+                    // Lógica del slider
+                    currentSlide: 0,
+                    autoplayInterval: null,
+
+                    init() {
+                        window.addEventListener('resize', this.updateView);
+                        this.startAutoplay();
+                    },
+                    startAutoplay() {
+                        this.autoplayInterval = setInterval(() => {
+                            this.nextSlide();
+                        }, 5000); // Cambia cada 5 segundos
+                    },
+                    stopAutoplay() {
+                        clearInterval(this.autoplayInterval);
+                    },
+                    nextSlide() {
+                        this.currentSlide = (this.currentSlide === this.slides.length - 1) ? 0 : this.currentSlide + 1;
+                    },
+                    prevSlide() {
+                        this.currentSlide = (this.currentSlide === 0) ? this.slides.length - 1 : this.currentSlide - 1;
                     }
                 }"
-                x-init="window.addEventListener('resize', updateView)"
-                class="relative w-full h-[600px]"
-                >
-                    
-                    <div x-show="isMobile" class="relative w-full h-full" x-transition>
-                        <img
-                            src="/img/BGHero.png"
-                            alt="Fondo móvil"
-                            class="w-full h-full object-cover absolute top-0 left-0"
-                        />
-                        <div class="absolute inset-0 flex flex-col justify-center items-center text-white px-4 py-10">
-                            <p class="text-4xl font-bold text-center leading-snug mb-4">Cruzá fronteras con</p>
-                            <img src="/svg/textHeroWhite.svg" alt="Nuevo Horizonte" class="mb-6 w-[250px]" />
-                            <a
-                                href="#"
-                                class="bg-[#1b72bf] text-white px-6 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-base font-medium shadow-lg"
-                            >
-                                Contáctanos
-                            </a>
-                        </div>
-                    </div>
+                x-init="init()"
+                @mouseover="stopAutoplay()"
+                @mouseleave="startAutoplay()"
+                class="relative w-full h-[600px] overflow-hidden" 
+            >
 
-                    <div x-show="!isMobile" class="relative w-full h-full" x-transition>
-                        <img
-                            src="/img/BGHero.png"
-                            alt="Fondo escritorio"
-                            class="w-full h-full object-cover absolute top-0 left-0"
-                        />
-                        <div class="absolute inset-0 flex flex-col justify-center items-start text-white px-4 md:pl-32 py-20">
-                            <p class="text-7xl font-bold leading-tight mb-4">Cruzá fronteras con</p>
-                            <img src="/svg/textHeroWhite.svg" alt="Nuevo Horizonte" class="mb-8 w-[400px]" />
-                            <a
-                                href="#"
-                                class="bg-[#1b72bf] text-white px-8 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-lg font-medium shadow-lg"
-                            >
-                                Contáctanos
-                            </a>
+                <div class="flex transition-transform duration-700 ease-in-out h-full"
+                    :style="`transform: translateX(-${currentSlide * 100}%)`">
+
+                   
+                    <template x-for="(slide, index) in slides" :key="index">
+                        {{-- Cada slide individual --}}
+                        <div class="w-full flex-shrink-0 relative h-full">
+
+                           
+                            <div x-show="isMobile" class="relative w-full h-full"
+                                x-transition:enter="transition ease-out duration-300"
+                                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+                                <img
+                                    :src="slide.mobile.image"
+                                    :alt="'Fondo móvil ' + slide.id"
+                                    class="w-full h-full object-cover absolute top-0 left-0"
+                                />
+                               
+                                <template x-if="slide.mobile.title">
+                                    <div class="absolute inset-0 flex flex-col justify-center items-center text-white px-4 py-10 ">
+                                        <p class="text-4xl font-bold text-center leading-snug mb-4 animate__animated animate__fadeInDown" x-text="slide.mobile.title"></p>
+                                        <img :src="slide.mobile.text_img" :alt="'Texto Hero Móvil ' + slide.id" class="mb-6 w-[250px] animate__animated animate__zoomIn" />
+                                        <a
+                                            :href="slide.mobile.button_link"
+                                            class="bg-[#1b72bf] text-white px-6 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-base font-medium shadow-lg animate__animated animate__bounceIn"
+                                            x-text="slide.mobile.button_text"
+                                        ></a>
+                                    </div>
+                                </template>
+                            </div>
+
+                            
+                            <div x-show="!isMobile" class="relative w-full h-full"
+                                x-transition:enter="transition ease-out duration-300"
+                                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+                                <img
+                                    :src="slide.desktop.image"
+                                    :alt="'Fondo escritorio ' + slide.id"
+                                    class="w-full h-full object-cover absolute top-0 left-0"
+                                />
+                                
+                                <template x-if="slide.desktop.title">
+                                    <div class="absolute inset-0 flex flex-col justify-center items-start text-white px-4 md:pl-32 py-20  bg-opacity-40">
+                                        <p class="text-7xl font-bold leading-tight mb-4 animate__animated animate__fadeInDown" x-text="slide.desktop.title"></p>
+                                        <img :src="slide.desktop.text_img" :alt="'Texto Hero Escritorio ' + slide.id" class="mb-8 w-[400px] animate__animated animate__zoomIn" />
+                                        <a
+                                            :href="slide.desktop.button_link"
+                                            class="bg-[#1b72bf] text-white px-8 py-3 rounded-md hover:bg-[#1b72bf] transition duration-300 text-lg font-medium shadow-lg animate__animated animate__bounceIn"
+                                            x-text="slide.desktop.button_text"
+                                        ></a>
+                                    </div>
+                                </template>
+                            </div>
                         </div>
-                    </div>
+                    </template>
+                </div>
+
+                <button @click="prevSlide()"
+                    class="absolute top-1/2 left-6 transform -translate-y-1/2 bg-gray-900 bg-opacity-40 text-white p-4 rounded-full hover:bg-opacity-60 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-75 transition duration-300 z-20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button @click="nextSlide()"
+                    class="absolute top-1/2 right-6 transform -translate-y-1/2 bg-black bg-opacity-90 text-white p-4 rounded-full hover:bg-opacity-60 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-75 transition duration-300 z-20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+
+                <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+                    <template x-for="(slide, index) in slides" :key="index">
+                        <button @click="currentSlide = index; stopAutoplay(); startAutoplay();"
+                            :class="{ 'bg-[#1b72bf] ring-2 ring-white ring-opacity-75': currentSlide === index, 'bg-gray-400 hover:bg-gray-300': currentSlide !== index }"
+                            class="w-4 h-4 rounded-full transition duration-300 focus:outline-none"></button>
+                    </template>
+                </div>
             </section>
 
             <section id="Nosotros" class="py-16 bg-[#f5ffff]">
