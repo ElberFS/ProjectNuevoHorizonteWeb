@@ -299,19 +299,19 @@
                     <h2 class="text-5xl font-bold text-center text-black mb-8">Aliados Estrategicos</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/aliados/logo01.png " alt="Logo 1" class="max-h-16">
+                            <img src="/img/alianzas/Logo1.png " alt="Logo 1" class="max-h-16">
                         </div>
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/aliados/logo02.png" alt="Logo 2" class="max-h-16">
+                            <img src="/img/alianzas/Logo2.png" alt="Logo 2" class="max-h-17">
                         </div>
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/aliados/logo03.png" alt="Logo 3" class="max-h-16">
+                            <img src="/img/alianzas/Logo3.png" alt="Logo 3" class="max-h-16">
                         </div>
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/aliados/logo04.png" alt="Logo 4" class="max-h-16">
+                            <img src="/img/alianzas/Logo4.png" alt="Logo 4" class="max-h-17">
                         </div>
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/aliados/logo05.png" alt="Logo 5" class="max-h-16">
+                            <img src="/img/alianzas/Logo5.png" alt="Logo 5" class="max-h-17">
                         </div>
                     </div>
                 </div>
@@ -511,6 +511,28 @@
                     </div>
                 </div>
             </section>
+            <section class="bg-[#f5ffff] py-12">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-5xl font-bold text-center text-black mb-8">Marcas</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                            <img src="/img/alianzas/Logo1.png " alt="Logo 1" class="max-h-16">
+                        </div>
+                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                            <img src="/img/alianzas/Logo2.png" alt="Logo 2" class="max-h-17">
+                        </div>
+                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                            <img src="/img/alianzas/Logo3.png" alt="Logo 3" class="max-h-16">
+                        </div>
+                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                            <img src="/img/alianzas/Logo4.png" alt="Logo 4" class="max-h-17">
+                        </div>
+                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
+                            <img src="/img/alianzas/Logo5.png" alt="Logo 5" class="max-h-17">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section 
                 x-data="{
@@ -520,7 +542,7 @@
                     }
                 }"
                 x-init="window.addEventListener('resize', updateView)"
-                class="bg-[#f5ffff] py-16 px-4 relative overflow-hidden"
+                class="bg-white py-16 px-4 relative overflow-hidden"
                 >
                 <div class="container mx-auto flex  md:flex-row items-center justify-center md:gap-4 gap-8">
                     <!-- Imagen (oculta en móviles) -->
