@@ -78,7 +78,7 @@
                 <li><a href="#Reseñas" class="text-neutral-600 dark:text-neutral-300">Reseñas</a></li>
                 <li><a href="#Noticias" class="text-neutral-600 dark:text-neutral-300">Noticias</a></li>
                 <li><a href="#Oferta" class="text-neutral-600 dark:text-neutral-300">Ofertas</a></li>
-                <li><a href="#Contacto" class="text-neutral-600 dark:text-neutral-300">Conctacto</a></li>
+                <li><a href="#Contacto" class="text-neutral-600 dark:text-neutral-300">Contacto</a></li>
 
                 @if (Route::has('login'))
                     @auth
@@ -308,7 +308,7 @@
                             <img src="/img/alianzas/Logo4.png" alt="Logo 4" class="max-h-17">
                         </div>
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/alianzas/Logo5.png" alt="Logo 5" class="max-h-17">
+                            <img src="/img/Marca/Logo4.svg" alt="Logo 5" class="max-h-20">
                         </div>
                     </div>
                 </div>
@@ -597,11 +597,11 @@
         <footer  id="Contacto" class="bg-[#163E73] text-white py-16 px-4 animate-fade-in">
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
                 <div class="text-center md:text-left">
-                        <div class="logo-wrapper">
-                        <img src="Logo1.svg" alt="Company Logo" class="main-logo">
+                        <div class="logo-wrapper" >
+                        <img src="LOGOvariante.png" alt="Company Logo" class="main-logo">
                 </div>
                     <p class="text-gray-300 text-2xl leading-snug">
-                        Transforma tus sueños de viajes con experiencias inolvidables
+                        Aliados contigo nuestra experiencia, siempre a tu lado.
                     </p>
                 </div>
 
