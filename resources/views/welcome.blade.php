@@ -513,7 +513,7 @@
                     <h2 class="text-5xl font-bold text-center text-black mb-8">Marcas</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/alianzas/Logo1.png " alt="Logo 1" class="max-h-16">
+                            <img src="/img/Marca/Logo1.png" alt="Logo 1" class="max-h-16">
                         </div>
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
                             <img src="/img/alianzas/Logo2.png" alt="Logo 2" class="max-h-17">
