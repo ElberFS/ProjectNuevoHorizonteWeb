@@ -326,9 +326,9 @@
                         x-init="window.addEventListener('resize', updateView)"
                         :class="isMobile ? 'flex flex-col items-center text-center mb-12' : 'flex flex-row justify-center items-center text-center mb-12'"
                     >
-                        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mr-4 mb-2 md:mb-0">Tu Experiencia</h2>
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mr-4 mb-2 md:mb-0">Tu Experiencia Con</h2>
                         <img
-                            src="/svg/textHero.svg"
+                            src="/svg/NH.svg"
                             alt="Logo de la empresa"
                             class="h-15 w-auto"
                         >
@@ -513,19 +513,19 @@
                     <h2 class="text-5xl font-bold text-center text-black mb-8">Marcas</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/Marca/Logo1.png" alt="Logo 1" class="max-h-16">
+                            <img src="/img/Marca/Logo1.svg" alt="Logo 1" class="max-h-20">
                         </div>
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/alianzas/Logo2.png" alt="Logo 2" class="max-h-17">
+                            <img src="/img/Marca/Logo2.svg" alt="Logo 2" class="max-h-20">
                         </div>
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/alianzas/Logo3.png" alt="Logo 3" class="max-h-16">
+                            <img src="/img/Marca/Logo3.svg" alt="Logo 3" class="max-h-20">
                         </div>
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/alianzas/Logo4.png" alt="Logo 4" class="max-h-17">
+                            <img src="/img/Marca/Logo4.svg" alt="Logo 4" class="max-h-20">
                         </div>
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/alianzas/Logo5.png" alt="Logo 5" class="max-h-17">
+                            <img src="/img/Marca/Logo5.svg" alt="Logo 5" class="max-h-20">
                         </div>
                     </div>
                 </div>
