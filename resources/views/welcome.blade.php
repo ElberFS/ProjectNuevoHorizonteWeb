@@ -600,9 +600,8 @@
                         <div class="logo-wrapper" >
                         <img src="LOGOvariante.png" alt="Company Logo" class="main-logo">
                 </div>
-                    <p class="text-gray-300 text-2xl leading-snug">
-                        Aliados contigo nuestra experiencia, siempre a tu lado.
-                    </p>
+                    <p class="text-gray-300 text-2xl leading-snug">Aliados Contigo</p>
+                    <p class="text-gray-300 text-2xl leading-snug">Nuestra experiencia, siempre a tu lado!</p>
                 </div>
 
                 <div class="text-center md:text-left">
