@@ -508,28 +508,7 @@
                     </div>
                 </div>
             </section>
-            <section class="bg-[#f5ffff] py-12">
-                <div class="container mx-auto px-4">
-                    <h2 class="text-5xl font-bold text-center text-black mb-8">Marcas</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/Marca/Logo1.svg" alt="Logo 1" class="max-h-20">
-                        </div>
-                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/Marca/Logo2.svg" alt="Logo 2" class="max-h-20">
-                        </div>
-                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/Marca/Logo3.svg" alt="Logo 3" class="max-h-20">
-                        </div>
-                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/Marca/Logo4.svg" alt="Logo 4" class="max-h-20">
-                        </div>
-                        <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
-                            <img src="/img/Marca/Logo5.svg" alt="Logo 5" class="max-h-20">
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
 
             <section 
                 x-data="{
@@ -539,7 +518,7 @@
                     }
                 }"
                 x-init="window.addEventListener('resize', updateView)"
-                class="bg-white py-16 px-4 relative overflow-hidden"
+                class="bg-[#f5ffff] py-16 px-4 relative overflow-hidden"
                 >
                 <div class="container mx-auto flex  md:flex-row items-center justify-center md:gap-4 gap-8">
                     <!-- Imagen (oculta en móviles) -->
@@ -556,7 +535,7 @@
                     </div>
 
                     <!-- Contenido -->
-                    <div class="w-full md:w-[45%] flex flex-col items-center text-center md:items-start md:text-left animate-slide-in-right">
+                    <div class="w-full md:w-[45%] flex flex-col items-center text-center md:items-start md:text-left animate-slide-in-right ">
                         <h2 class="text-4xl font-bold text-gray-800 mb-4">¡Suscríbete!</h2>
                         <p class="text-gray-600 mb-8">Únete a nuestra comunidad y recibe ofertas exclusivas</p>
                         <form class="max-w-md w-full">
