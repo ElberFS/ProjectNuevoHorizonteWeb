@@ -297,8 +297,8 @@
                     </div>
 
                     <div class="max-w-[550px] text-center md:text-left animate-slide-in-right px-4">
-                        <h2 class="text-4xl md:text-5xl text-black mb-2 poppins-bold text-shadow-bold">Nuevo Horizonte</h2>
-                        <p class="text-xl md:text-2xl text-gray-700 mb-6 poppins-bold">AGENCIA MAYORISTA</p>
+                        <h2 class="text-4xl text-black mb-2 poppins-bold text-shadow-bold">Nuevo Horizonte</h2>
+                        <p class="text-xl text-gray-700 mb-6 poppins-bold">AGENCIA MAYORISTA</p>
                         <p class="text-gray-700 text-lg leading-relaxed">
                             En Nuevo Horizonte nacimos con el compromiso de ofrecer atención personalizada al mercado peruano, respaldada por un equipo con más de 30 años de experiencia en turismo. Nos enfocamos en brindar servicios de calidad al cliente B2B, con valores como honestidad, compromiso e innovación, buscando consolidarnos como líderes en el sector.
                         </p>
@@ -308,7 +308,7 @@
 
             <section class="bg-white py-12">
                 <div class="container mx-auto px-4">
-                    <h2 class="text-5xl text-center text-black mb-8 poppins-bold text-shadow-bold">Aliados Estrategicos</h2>
+                    <h2 class="text-4xl text-center text-black mb-2 poppins-bold text-shadow-bold">Aliados Estrategicos</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                         <div class="bg-white p-4 flex items-center justify-center rounded-lg shadow-md">
                             <img src="/img/alianzas/Logo1.png " alt="Logo 1" class="max-h-16">
