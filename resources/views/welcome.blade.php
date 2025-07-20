@@ -88,18 +88,7 @@
                 <li><a href="#Oferta" class="text-neutral-600 dark:text-neutral-300">Ofertas</a></li>
                 <li><a href="#Contacto" class="text-neutral-600 dark:text-neutral-300">Contacto</a></li>
 
-                @if (Route::has('login'))
-                    @auth
-                        <li><a href="{{ url('/dashboard') }}" class="bg-[#163E73] text-white px-4 py-2 rounded-sm font-medium "> {{ Auth::user()->name }}</a></li>
-                    @else
-                        <li>
-                            <a href="{{ route('login') }}"
-                                class="bg-[#163E73] text-white px-4 py-2 rounded-sm font-medium ">
-                                Iniciar Sesión
-                            </a>
-                        </li>
-                    @endauth
-                @endif
+                
             </ul>
 
             <!-- Menú móvil (cuando < 700px y está abierto) -->
@@ -110,18 +99,7 @@
                 <li><a href="#Ofertas" class="block text-neutral-600 dark:text-neutral-300">Ofertas</a></li>
                 <li><a href="#Contacto" class="block text-neutral-600 dark:text-neutral-300">Contacto</a></li>
 
-                @if (Route::has('login'))
-                    @auth
-                        <li><a href="{{ url('/dashboard') }}"  class="block  text-black underline py-2 rounded-sm font-medium ">{{ Auth::user()->name }}</a></li>
-                    @else
-                        <li>
-                            <a href="{{ route('login') }}"
-                                class="block bg-[#163E73] text-white px-4 py-2 text-center rounded-sm font-medium ">
-                                Iniciar Sesión
-                            </a>
-                        </li>
-                    @endauth
-                @endif
+
             </ul>
         </nav>
 
